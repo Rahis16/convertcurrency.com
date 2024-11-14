@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter - Convert Indian Rupee, Nepalese Rupee, and US Dollar</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Currency Converter - A simple tool to convert Indian Rupee (INR), Nepalese Rupee (NPR), and US Dollar (USD) in real-time. Enter the amount and get the conversion rate instantly.">
+    <meta name="keywords" content="Currency Converter, INR to USD, USD to NPR, Indian Rupee, Nepalese Rupee, US Dollar, Currency Exchange, Real-time Currency Conversion">
+    <meta name="author" content="SmartCoderRahis">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <div class="container">
+        <div class="sub-container">
+            <div class="left">
+                <select name="group1" id="group1">
+                    <option value="IND">Indian Currency</option>
+                    <option value="NEP">Nepalese Currency</option>
+                    <option value="USA">Dollor$</option>
+                </select>
+                <h3>=</h3>
+                <input type="text" name="amount" id="input" placeholder="Type Amount">
+            </div>
+            <h2>To</h2>
+            <div class="right">
+                <select name="group2" id="group2">     
+                    <option value="NEP">Nepalese Currency</option>
+                    <option value="IND">Indian Currency</option>
+                    <option value="USA">Dollor$</option>
+                </select>
+                <h3>=</h3>
+                <input type="text" name="output" id="output" placeholder="Result" readonly>
+            </div>
+        </div>
+        <button type="submit" id="btn">Convert</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
